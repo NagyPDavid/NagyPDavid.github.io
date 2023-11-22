@@ -1,0 +1,238 @@
+html {
+    position: relative;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/programozás/Szijarto_Zoli/logo_pics/photo-1519945302083-c274aa26c627.avif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: contrast(5) opacity(0.1) brightness(100%);
+}
+
+nav {
+    background-color: #023047;
+}
+
+nav img {
+    height: 40px;
+}
+
+a {
+    cursor: pointer;
+}
+
+.navitem {
+    font-size: 1.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    color: #fefae0;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    padding: 0px;
+    font-family: 'Varela Round', sans-serif;
+    color: #283618;
+
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+#about {
+    display: flex;
+}
+
+#about img {
+    max-width: 300px;
+    margin: 10px;
+}
+
+#aboutText {
+    margin: 10px;
+}
+
+#prices img {
+    margin: auto;
+    max-height: 300px;
+    align-items: center;
+}
+
+#service {
+    display: inline-flex;
+    justify-content: center;
+}
+
+#carouselFlex {
+    display: flex;
+    justify-content: center;
+}
+
+#carouselCleaning {
+    width: 400px;
+}
+
+
+#service img {
+    margin: 10px;
+}
+
+#gallery span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#gallery img {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    filter: opacity(1.0);
+}
+
+#gallery img:hover {
+    width: 350px;
+    cursor: pointer;
+
+}
+
+#brands img {
+    margin: 50px 0px 50px 0px;
+    max-width: 100%;
+}
+
+#contact {
+    background-color: #023047;
+    color: #fefae0;
+    height: auto;
+}
+
+.contact-details {
+    display: inline-block;
+    padding: 50px 0px 50px 50px;
+    font-size: 1.2rem;
+}
+
+#contact ul span li a {
+    text-decoration: none;
+    color: #fefae0;
+}
+
+.contact-details li {
+    list-style-type: none;
+    padding-bottom: 20px;
+}
+
+#phoneEmail {
+    font-size: 1.5rem;
+}
+
+.top-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border: solid #023047;
+    background-color: #023047;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+.top-button a {
+    text-decoration: none;
+    color: #fefae0;
+    font-size: 2rem;
+}
+
+.top-button:hover {
+    background-color: #fefae0;
+    border: solid #fefae0;
+}
+
+.top-button a:hover {
+    color: #023047;
+}
+
+/* #button {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#button:active {
+    background-color: #555;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+} */
+
+@media (max-width: 768px) {
+    #about {
+        display: block;
+    }
+
+    #carouselCleaning {
+        width: 250px;
+    }
+
+    /* #button {
+        margin: 30px;
+    } */
+}
