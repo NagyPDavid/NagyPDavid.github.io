@@ -56,7 +56,8 @@ hr {
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
-img {
+#service img,
+#about img {
     border-radius: 8px;
     max-width: 100%;
     height: auto;
@@ -110,22 +111,20 @@ img {
 
 #gallery img {
     width: 300px;
-    margin: 10px;
-    padding: 50px;
-    border-radius: 40px;
+    margin: 50px;
+    padding: 0px;
+    box-shadow: 0px 0px 10px 2px grey;
     filter: opacity(1.0);
 }
 
 #gallery img:hover {
-    width: 350px;
+    width: 360px;
     padding: 0px;
     margin: 0px;
-    border-radius: 20px;
 }
 
 #brands img {
     margin: 50px 0px 50px 0px;
-    max-width: 100%;
 }
 
 #contact {
