@@ -1,3 +1,7 @@
+// $('.carousel').carousel({
+//     interval: 2000
+// })
+
 // var btn = $('#button');
 
 // $(window).scroll(function () {

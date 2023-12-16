@@ -6,25 +6,26 @@ body {
     margin: 0px;
     padding: 0px;
     width: auto;
+    background-color: aquamarine;
 }
 
-body::before {
+/* body::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(/programozás/Szijarto_Zoli/logo_pics/photo-1519945302083-c274aa26c627.avif);
     background-repeat: no-repeat;
     background-attachment: fixed;
     filter: contrast(5) opacity(0.1) brightness(100%);
-}
+} */
 
 nav {
-    background-color: #023047;
+    background-color: #35b7ff;
+    z-index: 1;
 }
 
 nav img {
-    height: 40px;
+    height: 100px;
 }
 
 a {
@@ -35,7 +36,7 @@ a {
     font-size: 1.5rem;
     font-family: 'Josefin Sans', sans-serif;
     text-decoration: none;
-    color: #fefae0;
+    color: #f0a41c;
 }
 
 main {
@@ -56,21 +57,14 @@ hr {
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
-#service img,
 #about img {
     border-radius: 8px;
-    max-width: 100%;
-    height: auto;
-    margin: auto;
+    max-width: 300px;
+    margin-top: 10px;
 }
 
 #about {
     display: flex;
-}
-
-#about img {
-    max-width: 300px;
-    margin: 10px;
 }
 
 #aboutText {
@@ -94,44 +88,43 @@ hr {
 }
 
 #carouselCleaning {
-    width: 400px;
+    width: 300px;
 }
 
 
 #service img {
-    margin: 10px;
+    margin: 0px 40px;
 }
 
 #gallery span {
     display: inline-flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 #gallery img {
     width: 300px;
-    margin: 50px;
-    padding: 0px;
+    height: 300px;
+    margin: 10px 0px;
+    padding: 20px;
     box-shadow: 0px 0px 10px 2px grey;
     filter: opacity(1.0);
 }
 
 #gallery img:hover {
-    width: 360px;
-    padding: 0px;
-    margin: 0px;
+    width: 300px;
 }
 
 #brands img {
     margin: 50px 0px 50px 0px;
+    width: 100%;
 }
 
 #contact {
     background-color: #023047;
     color: #fefae0;
     height: auto;
-
 }
 
 .contact-details {
@@ -159,8 +152,8 @@ hr {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    border: solid #023047;
-    background-color: #023047;
+    border: solid #35b7ff;
+    background-color: #35b7ff;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -172,17 +165,17 @@ hr {
 
 .top-button a {
     text-decoration: none;
-    color: #fefae0;
+    color: #f0a41c;
     font-size: 2rem;
 }
 
 .top-button:hover {
-    background-color: #fefae0;
-    border: solid #fefae0;
+    background-color: #f0a41c;
+    border: solid #f0a41c;
 }
 
 .top-button a:hover {
-    color: #023047;
+    color: #35b7ff;
 }
 
 /* #button {
