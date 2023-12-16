@@ -152,8 +152,8 @@ hr {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    border: solid #35b7ff;
-    background-color: #35b7ff;
+    border: solid #f0a41c;
+    background-color: #f0a41c;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -165,17 +165,17 @@ hr {
 
 .top-button a {
     text-decoration: none;
-    color: #f0a41c;
+    color: white;
     font-size: 2rem;
 }
 
 .top-button:hover {
-    background-color: #f0a41c;
-    border: solid #f0a41c;
+    background-color: white;
+    border: solid white;
 }
 
 .top-button a:hover {
-    color: #35b7ff;
+    color: #f0a41c;
 }
 
 /* #button {
