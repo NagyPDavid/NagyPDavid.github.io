@@ -8,17 +8,15 @@ body {
     width: auto;
 }
 
-
-nav {
-    background-color: #35b7ff;
-}
-
 nav img {
-    height: 100px;
+    height: 70px;
 }
 
-.row img {
-    padding: 0px;
+#navbarNav {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px 20px;
+    font-family: 'Varela Round', sans-serif;
 }
 
 main {
@@ -43,6 +41,7 @@ main {
 #about {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 #aboutText {
@@ -130,19 +129,7 @@ main {
     color: #f0a41c;
 }
 
-/* @media (max-width: 768px) {
-    #about {
-        display: block;
-    }
-
-    #carouselCleaning {
-        width: 250px;
-    }
-
-    /* #button {
-        margin: 30px;
-    }
-} */
+/* <----- EMAIL WIDGET -----> */
 
 */ #feedback-page {
     text-align: center;
