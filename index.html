@@ -8,28 +8,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Varela+Round&display=swap"
         rel="stylesheet">
     <title>AZ Klíma - Klíma A-tól Z-ig</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="path/to/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-light">
     <nav class="navbar sticky-top navbar-expand-md navbar-dark p-0 bg-secondary">
-        <div class="container-fluid p-0">
+        <div id="navbar" class="container-fluid p-0">
             <a class="navbar-brand p-0" href="#"><img src="./final_logo_plan-01.PNG" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button id="toggleButton" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ">
-                    <li class="nav-item"><a class="nav-link" href="#about">Rólam</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#service">Telepítés, szervíz</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#prices">Áraink</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#gallery">Galéria</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Kapcsolat</a></li>
+                <ul class="navbar-nav">
+                    <li class="nav-item" id="aboutNavItem"><a class="nav-link" href="#about">Rólam</a></li>
+                    <li class="nav-item" id="serviceNavItem"><a class="nav-link" href="#service">Telepítés, szervíz</a>
+                    </li>
+                    <li class="nav-item" id="pricesNavItem"><a class="nav-link" href="#prices">Áraink</a></li>
+                    <li class="nav-item" id="contactNavItem"><a class="nav-link" href="#contact">Kapcsolat</a></li>
+                    <li class="nav-item" id="galleryNavItem"><a class="nav-link" href="#gallery">Galéria</a></li>
+                    <li class="nav-item" id="impressumNavItem"><a class="nav-link" href="#impressum">Impresszum</a></li>
                 </ul>
             </div>
         </div>
@@ -39,12 +43,12 @@
             <div class="container text-center p-0">
                 <div class="row">
                     <div class="col-md-6 col-12">
-                        <img src="./photos/intro-01.png">
+                        <img src="./photos_resized/intro-01.png">
                     </div>
                     <div class="col col-md-6 col-12 p-0">
                         <div id="aboutText">
                             <h2>Üdvözlöm a holnapomon!</h2>
-                            <ul>
+                            <ul class="p-2">
                                 <li>Szíjártó Zoltán vagyok, 47 éves és 2020 óta hivatalosan bejegyzett klímaszerelő.
                                 </li>
                                 <li>Munkám során minden esetben a klímaberendezés precíz beépítése, kivitelezése,
@@ -77,16 +81,16 @@
                         </div>
                     </div>
                     <div class="col col-xxl-6 col-12 p-0">
-                        <img src="./photos/intro-06.png" alt="" class="img-fluid">
+                        <img src="./photos_resized/intro-06.png" alt="intro-06" class="img-fluid">
                     </div>
                 </div>
             </div>
         </section>
-        <section>
+        <section id="cleaning">
             <div class="container text-center bg-body-secondary">
                 <div class="row">
                     <div class="col col-xxl-6 col-12 p-0">
-                        <img src="./photos/clean-montage.png" alt="" class="img-fluid">
+                        <img src="./photos_resized/clean-montage.png" alt="clean-montage" class="img-fluid">
                     </div>
                     <div class="col col-xxl-6 col-12 ">
                         <h2>Szervíz, javítás, tisztítás</h2>
@@ -114,7 +118,7 @@
         <section id="prices">
             <div class="container text-center bg-primary-subtle">
                 <div class="row">
-                    <div class="col col-xxl-6 col-12 ">
+                    <div class="col col-xxl-6 col-12">
                         <h2>Árak:</h2>
                         <h4>Alap klímaszerelés</h4>
                         <ul class="p-0">
@@ -136,10 +140,28 @@
                             árát.</p>
                     </div>
                     <div class="col col-xxl-6 col-12 p-0">
-                        <img src="./photos/lg-01.png" class="img-fluid">
+                        <img src="./photos_resized/lg-01.png" alt="lg-01" class="img-fluid">
                     </div>
                 </div>
             </div>
+        </section>
+        <section id="contact">
+            <div class="container text-center bg-body-secondary">
+                <div class="row">
+                    <div class="col col-xxl-6 col-12 p-0">
+                        <img src="./photos_resized/contact-01.png" alt="contact-01" class="img-fluid">
+                    </div>
+                    <div class="col col-xxl-6 col-12">
+                        <h2>Elérhetőségeim:</h2>
+                        <ul class="p-0">
+                            <li class="contact-li">Telefon: <br><a class="contact-link" href="+36707016911">+36 70 7016
+                                    911</a></li>
+                            <li class="contact-li">Email: <br><a class="contact-link"
+                                    href="mailto:zoltan.szijarto76@gmail.com">zoltan.szijarto76@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
         </section>
         <div class="breakpoint">
             <hr>
@@ -147,32 +169,30 @@
         <section id="gallery">
             <h1>Képek korábbi munkáimról:</h1>
             <span>
-                <img src="./photos/intro-02.png">
-                <img src="./photos/Gree-01.png">
-                <img src="./photos/cascade-01.png">
-                <img src="./photos/intro-03.png">
-                <img src="./photos/cable-01.png">
-                <img src="./photos/midea-01.png">
-                <img src="./photos/lg-02.png">
-                <img src="./photos/lg-04.png">
-                <img src="./photos/internal-01.png">
-                <!-- <img src="./photos/intro-04.png"> -->
-                <img src="./photos/samsung-01.png">
-                <img src="./photos/samsung-02.png">
-                <img src="./photos/samsung-03.png">
-                <img src="./photos/samsung-04.png">
-                <!-- <img src="./photos/intro-05.png"> -->
-                <img src="./photos/details_01.png">
-                <img src="./photos/details_02.png">
+                <img src="./photos_resized/intro-02.png" alt="intro-02">
+                <img src="./photos_resized/Gree-01.png" alt="Gree-01">
+                <img src="./photos_resized/cascade-01.png" alt="cascade-01">
+                <img src="./photos_resized/intro-03.png" alt="intro-03">
+                <img src="./photos_resized/cable-01.png" alt="cable-01">
+                <img src="./photos_resized/midea-01.png" alt="midea-01">
+                <img src="./photos_resized/lg-02.png" alt="lg-02">
+                <img src="./photos_resized/lg-04.png" alt="lg-04">
+                <img src="./photos_resized/internal-01.png" alt="internal-01">
+                <img src="./photos_resized/samsung-01.png" alt="samsung-01">
+                <img src="./photos_resized/samsung-02.png" alt="samsung-02">
+                <img src="./photos_resized/samsung-03.png" alt="samsung-03">
+                <img src="./photos_resized/samsung-04.png" alt="samsung-04">
+                <img src="./photos_resized/details_01.png" alt="details_01">
+                <img src="./photos_resized/details_02.png" alt="details_02">
             </span>
         </section>
         <div class="breakpoint">
             <hr>
         </div>
         <section id="brands">
-            <img src="./brands_logo_all.png" alt="">
+            <img src="./photos_resized/brands_logo_all.png" alt="">
         </section>
-        <div id="form-main">
+        <!-- <div id="form-main" class="text-center">
             <div id="form-div">
                 <form class="form" id="form1" action="nagypdavid@gmail.com" method="post">
 
@@ -199,11 +219,11 @@
                     </div>
                 </form>
             </div>
-        </div>
+        </div> -->
     </main>
     <footer>
-        <section id="contact">
-            <ul class="contact-details">
+        <section id="impressum">
+            <ul class="impressum-details p-1">
                 <h2>Adatok:</h2>
                 <li>Név: Szíjártó Zoltán</li>
                 <li>Cím: 1222 Budapest Mézesfehér utca 21.</li>
@@ -217,13 +237,14 @@
         </section>
     </footer>
     <button class="top-button">
-        <a href="#top">&#8683</a></button>
+        <a href="#top"><img src="./arrow.png" alt=""></a></button>
     <script src="app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
-    <script src="path/to/popper.min.js"></script>
-    <script src="path/to/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

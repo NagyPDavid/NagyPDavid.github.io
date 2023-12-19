@@ -1,18 +1,22 @@
-// $('.carousel').carousel({
-//     interval: 2000
-// })
+const toggleButton = document.getElementById('toggleButton');
+const navbarCollapse = document.getElementById('navbarNav');
+const aboutNavItem = document.getElementById('aboutNavItem');
+const serviceNavItem = document.getElementById('serviceNavItem');
+const pricesNavItem = document.getElementById('pricesNavItem');
+const contactNavItem = document.getElementById('contactNavItem');
+const galleryNavItem = document.getElementById('galleryNavItem');
+const impressumNavItem = document.getElementById('impressumNavItem');
 
-// var btn = $('#button');
+aboutNavItem.addEventListener('click', toggleNavbarCollapse);
+serviceNavItem.addEventListener('click', toggleNavbarCollapse);
+pricesNavItem.addEventListener('click', toggleNavbarCollapse);
+contactNavItem.addEventListener('click', toggleNavbarCollapse);
+galleryNavItem.addEventListener('click', toggleNavbarCollapse);
+impressumNavItem.addEventListener('click', toggleNavbarCollapse);
 
-// $(window).scroll(function () {
-//     if ($(window).scrollTop() > 300) {
-//         btn.addClass('show');
-//     } else {
-//         btn.removeClass('show');
-//     }
-// });
-
-// btn.on('click', function (e) {
-//     e.preventDefault();
-//     $('html, body').animate({ scrollTop: 0 }, '300');
-// });
+function toggleNavbarCollapse() {
+    navbarCollapse.classList.toggle('show');
+    toggleButton.classList.toggle('collapsed');
+    const isCollapsed = !navbarCollapse.classList.contains('show');
+    toggleButton.setAttribute('aria-expanded', isCollapsed.toString());
+}
