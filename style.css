@@ -40,7 +40,7 @@ main {
 }
 
 #service .row {
-    box-shadow: 0px 0px 10px 2px grey
+    box-shadow: 0px 0px 10px 2px grey;
 }
 
 #cleaning .row {
@@ -122,7 +122,6 @@ li {
     width: 100%;
     height: auto;
     margin: auto;
-    padding-bottom: 40px;
 }
 
 .impressum-details {
@@ -134,7 +133,7 @@ li {
 
 .impressum-details li {
     list-style-type: none;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 #phoneEmail {
@@ -145,11 +144,11 @@ li {
     position: fixed;
     bottom: 15px;
     right: 15px;
-    border: solid #f0a41c;
-    background-color: #f0a41c;
-    box-shadow: 0px 0px 4px 4px #f0a41c;
-    width: 50px;
-    height: 50px;
+    border: solid transparent;
+    background-color: transparent;
+    /* box-shadow: 0px 0px 10px 10px #f0a41c; */
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
 
     display: flex;
@@ -177,6 +176,15 @@ li {
     box-shadow: none;
 }
 
-.top-button a:hover {
+/* .top-button a:hover {
     color: #f0a41c;
+} */
+
+#createdBy {
+    background-color: #0d1b2a;
+    color: #778da9;
+    font-family: 'Varela Round', sans-serif;
+    height: 50px;
+    font-size: medium;
+    margin: auto;
 }
