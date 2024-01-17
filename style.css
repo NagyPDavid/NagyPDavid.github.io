@@ -111,6 +111,11 @@ li {
     width: 300px;
 }
 
+#brands {
+    width: 120%;
+    margin-left: -10%;
+}
+
 #brands img {
     margin: 50px 0px 50px 0px;
     width: 100%;
